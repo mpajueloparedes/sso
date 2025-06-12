@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6229F5FF-F267-4A1B-8E0B-DAED369354B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{D7D4EFD5-1558-4953-9CAC-828AE2E10C8D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{FE14763A-2206-4FA6-BF2B-3993209DE505}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{17A86729-D2CC-41B9-83CB-CD91790244AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaproSSO.Domain", "MaproSSO.Domain\MaproSSO.Domain.csproj", "{D906E597-D7D2-4B68-B807-19AF210B5DA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaproSSO.Application", "MaproSSO.Application\MaproSSO.Application.csproj", "{B55DA03F-F0CE-433A-BBAF-4B14156310EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D906E597-D7D2-4B68-B807-19AF210B5DA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D906E597-D7D2-4B68-B807-19AF210B5DA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D906E597-D7D2-4B68-B807-19AF210B5DA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D906E597-D7D2-4B68-B807-19AF210B5DA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B55DA03F-F0CE-433A-BBAF-4B14156310EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B55DA03F-F0CE-433A-BBAF-4B14156310EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B55DA03F-F0CE-433A-BBAF-4B14156310EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B55DA03F-F0CE-433A-BBAF-4B14156310EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D7D4EFD5-1558-4953-9CAC-828AE2E10C8D} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{FE14763A-2206-4FA6-BF2B-3993209DE505} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{17A86729-D2CC-41B9-83CB-CD91790244AD} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{D906E597-D7D2-4B68-B807-19AF210B5DA6} = {D7D4EFD5-1558-4953-9CAC-828AE2E10C8D}
+		{B55DA03F-F0CE-433A-BBAF-4B14156310EA} = {D7D4EFD5-1558-4953-9CAC-828AE2E10C8D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {97BF9864-CABD-4C42-B2DD-C3CC365C1815}
+	EndGlobalSection
+EndGlobal

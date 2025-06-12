@@ -1,0 +1,4 @@
+E:\GIT\MaproSSO\tmp\MaproSSO\MaproSSO.Domain\obj\Debug\net8.0\MaproSSO.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\GIT\MaproSSO\tmp\MaproSSO\MaproSSO.Domain\obj\Debug\net8.0\MaproSSO.Domain.AssemblyInfoInputs.cache
+E:\GIT\MaproSSO\tmp\MaproSSO\MaproSSO.Domain\obj\Debug\net8.0\MaproSSO.Domain.AssemblyInfo.cs
+E:\GIT\MaproSSO\tmp\MaproSSO\MaproSSO.Domain\obj\Debug\net8.0\MaproSSO.Domain.csproj.CoreCompileInputs.cache
