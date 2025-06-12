@@ -2,3 +2,10 @@ E:\GIT\MaproSSO\tmp\MaproSSO\MaproSSO.Domain\obj\Debug\net8.0\MaproSSO.Domain.Ge
 E:\GIT\MaproSSO\tmp\MaproSSO\MaproSSO.Domain\obj\Debug\net8.0\MaproSSO.Domain.AssemblyInfoInputs.cache
 E:\GIT\MaproSSO\tmp\MaproSSO\MaproSSO.Domain\obj\Debug\net8.0\MaproSSO.Domain.AssemblyInfo.cs
 E:\GIT\MaproSSO\tmp\MaproSSO\MaproSSO.Domain\obj\Debug\net8.0\MaproSSO.Domain.csproj.CoreCompileInputs.cache
+E:\GIT\MaproSSO\tmp\MaproSSO\MaproSSO.Domain\bin\Debug\net8.0\MaproSSO.Domain.deps.json
+E:\GIT\MaproSSO\tmp\MaproSSO\MaproSSO.Domain\bin\Debug\net8.0\MaproSSO.Domain.dll
+E:\GIT\MaproSSO\tmp\MaproSSO\MaproSSO.Domain\bin\Debug\net8.0\MaproSSO.Domain.pdb
+E:\GIT\MaproSSO\tmp\MaproSSO\MaproSSO.Domain\obj\Debug\net8.0\MaproSSO.Domain.dll
+E:\GIT\MaproSSO\tmp\MaproSSO\MaproSSO.Domain\obj\Debug\net8.0\refint\MaproSSO.Domain.dll
+E:\GIT\MaproSSO\tmp\MaproSSO\MaproSSO.Domain\obj\Debug\net8.0\MaproSSO.Domain.pdb
+E:\GIT\MaproSSO\tmp\MaproSSO\MaproSSO.Domain\obj\Debug\net8.0\ref\MaproSSO.Domain.dll

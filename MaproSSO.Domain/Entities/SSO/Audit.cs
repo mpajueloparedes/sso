@@ -1,4 +1,5 @@
 ﻿using MaproSSO.Domain.Common;
+using MaproSSO.Domain.Entities.Areas;
 using MaproSSO.Domain.Entities.Security;
 using MaproSSO.Domain.Exceptions;
 
@@ -144,4 +145,90 @@ namespace MaproSSO.Domain.Entities.SSO
             SetUpdatedInfo(cancelledBy);
         }
     }
+
+    //public partial class Audit
+    //{
+    //    // Método adicional para agregar evaluación (ya existente pero lo mejoramos)
+    //    public void AddEvaluation(
+    //        Guid criteriaId,
+    //        decimal score,
+    //        string observations = null,
+    //        bool evidenceRequired = false,
+    //        Guid? evaluatedBy = null)
+    //    {
+    //        if (Status != "InProgress")
+    //            throw new BusinessRuleValidationException("Solo se pueden agregar evaluaciones a auditorías en progreso");
+
+    //        if (_evaluations.Any(e => e.CriteriaId == criteriaId))
+    //            throw new BusinessRuleValidationException("Ya existe una evaluación para este criterio");
+
+    //        // Obtener el criterio para validar el puntaje máximo
+    //        // Nota: En un escenario real, esto vendría del repositorio
+    //        var maxScore = 10m; // Por defecto, debería venir del criterio
+
+    //        var evaluation = AuditEvaluation.Create(
+    //            Id,
+    //            criteriaId,
+    //            score,
+    //            maxScore,
+    //            observations,
+    //            evidenceRequired,
+    //            evaluatedBy ?? AuditorUserId);
+
+    //        _evaluations.Add(evaluation);
+    //        UpdateScores();
+    //    }
+
+    //    public void UpdateEvaluation(
+    //        Guid criteriaId,
+    //        decimal score,
+    //        string observations)
+    //    {
+    //        if (Status != "InProgress")
+    //            throw new BusinessRuleValidationException("Solo se pueden actualizar evaluaciones en auditorías en progreso");
+
+    //        var evaluation = _evaluations.FirstOrDefault(e => e.CriteriaId == criteriaId);
+    //        if (evaluation == null)
+    //            throw new EntityNotFoundException("Evaluación no encontrada");
+
+    //        evaluation.UpdateScore(score, observations);
+    //        UpdateScores();
+    //    }
+
+    //    public void AddEvidenceToEvaluation(
+    //        Guid criteriaId,
+    //        string description,
+    //        string evidenceUrl,
+    //        Guid uploadedBy)
+    //    {
+    //        var evaluation = _evaluations.FirstOrDefault(e => e.CriteriaId == criteriaId);
+    //        if (evaluation == null)
+    //            throw new EntityNotFoundException("Evaluación no encontrada");
+
+    //        evaluation.AddEvidence(description, evidenceUrl, uploadedBy);
+    //    }
+
+    //    public bool AreAllRequiredEvaluationsComplete()
+    //    {
+    //        return _evaluations.All(e => e.IsComplete);
+    //    }
+
+    //    public Dictionary<string, int> GetEvaluationSummaryByCategory()
+    //    {
+    //        // Este método devolvería un resumen de evaluaciones por categoría
+    //        // En un escenario real, necesitaríamos acceso a las categorías
+    //        return new Dictionary<string, int>
+    //        {
+    //            ["Completadas"] = _evaluations.Count(e => e.IsComplete),
+    //            ["Pendientes"] = _evaluations.Count(e => !e.IsComplete),
+    //            ["Críticas"] = _evaluations.Count(e => e.NeedsImprovement)
+    //        };
+    //    }
+
+    //    public decimal GetAverageCompliancePercentage()
+    //    {
+    //        if (!_evaluations.Any()) return 0;
+    //        return _evaluations.Average(e => e.ScorePercentage);
+    //    }
+    //}
 }

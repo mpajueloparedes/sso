@@ -7,6 +7,8 @@ using MaproSSO.Domain.Entities.SSO;
 using System.Threading;
 using System.Threading.Tasks;
 using static MaproSSO.Domain.Entities.SSO.AuditCriteria;
+using MaproSSO.Domain.Entities.Announcements;
+using MaproSSO.Domain.Entities.Areas;
 
 namespace MaproSSO.Application.Common.Interfaces
 {

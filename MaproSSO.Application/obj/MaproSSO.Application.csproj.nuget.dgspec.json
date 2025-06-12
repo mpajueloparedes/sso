@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\GIT\\MaproSSO\\tmp\\MaproSSO\\MaproSSO.Application\\MaproSSO.Application.csproj": {}
+    "E:\\GIT\\MaproSSO\\tmp\\sso\\sso\\MaproSSO.Application\\MaproSSO.Application.csproj": {}
   },
   "projects": {
-    "E:\\GIT\\MaproSSO\\tmp\\MaproSSO\\MaproSSO.Application\\MaproSSO.Application.csproj": {
+    "E:\\GIT\\MaproSSO\\tmp\\sso\\sso\\MaproSSO.Application\\MaproSSO.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GIT\\MaproSSO\\tmp\\MaproSSO\\MaproSSO.Application\\MaproSSO.Application.csproj",
+        "projectUniqueName": "E:\\GIT\\MaproSSO\\tmp\\sso\\sso\\MaproSSO.Application\\MaproSSO.Application.csproj",
         "projectName": "MaproSSO.Application",
-        "projectPath": "E:\\GIT\\MaproSSO\\tmp\\MaproSSO\\MaproSSO.Application\\MaproSSO.Application.csproj",
+        "projectPath": "E:\\GIT\\MaproSSO\\tmp\\sso\\sso\\MaproSSO.Application\\MaproSSO.Application.csproj",
         "packagesPath": "C:\\Users\\MarcoPajuelo\\.nuget\\packages\\",
-        "outputPath": "E:\\GIT\\MaproSSO\\tmp\\MaproSSO\\MaproSSO.Application\\obj\\",
+        "outputPath": "E:\\GIT\\MaproSSO\\tmp\\sso\\sso\\MaproSSO.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\GIT\\MaproSSO\\tmp\\MaproSSO\\MaproSSO.Domain\\MaproSSO.Domain.csproj": {
-                "projectPath": "E:\\GIT\\MaproSSO\\tmp\\MaproSSO\\MaproSSO.Domain\\MaproSSO.Domain.csproj"
+              "E:\\GIT\\MaproSSO\\tmp\\sso\\sso\\MaproSSO.Domain\\MaproSSO.Domain.csproj": {
+                "projectPath": "E:\\GIT\\MaproSSO\\tmp\\sso\\sso\\MaproSSO.Domain\\MaproSSO.Domain.csproj"
               }
             }
           }
@@ -95,14 +95,14 @@
         }
       }
     },
-    "E:\\GIT\\MaproSSO\\tmp\\MaproSSO\\MaproSSO.Domain\\MaproSSO.Domain.csproj": {
+    "E:\\GIT\\MaproSSO\\tmp\\sso\\sso\\MaproSSO.Domain\\MaproSSO.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GIT\\MaproSSO\\tmp\\MaproSSO\\MaproSSO.Domain\\MaproSSO.Domain.csproj",
+        "projectUniqueName": "E:\\GIT\\MaproSSO\\tmp\\sso\\sso\\MaproSSO.Domain\\MaproSSO.Domain.csproj",
         "projectName": "MaproSSO.Domain",
-        "projectPath": "E:\\GIT\\MaproSSO\\tmp\\MaproSSO\\MaproSSO.Domain\\MaproSSO.Domain.csproj",
+        "projectPath": "E:\\GIT\\MaproSSO\\tmp\\sso\\sso\\MaproSSO.Domain\\MaproSSO.Domain.csproj",
         "packagesPath": "C:\\Users\\MarcoPajuelo\\.nuget\\packages\\",
-        "outputPath": "E:\\GIT\\MaproSSO\\tmp\\MaproSSO\\MaproSSO.Domain\\obj\\",
+        "outputPath": "E:\\GIT\\MaproSSO\\tmp\\sso\\sso\\MaproSSO.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

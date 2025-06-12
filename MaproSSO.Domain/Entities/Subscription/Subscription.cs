@@ -1,6 +1,7 @@
 ﻿using MaproSSO.Domain.Common;
 using MaproSSO.Domain.Enums;
 using MaproSSO.Domain.Events.Subscription;
+using MaproSSO.Domain.Exceptions;
 using System.Numerics;
 
 namespace MaproSSO.Domain.Entities.Subscription

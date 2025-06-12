@@ -1,4 +1,5 @@
 ﻿using MaproSSO.Domain.Common;
+using MaproSSO.Domain.Entities.Areas;
 using MaproSSO.Domain.Entities.Security;
 using MaproSSO.Domain.Enums;
 using MaproSSO.Domain.Events.SSO;

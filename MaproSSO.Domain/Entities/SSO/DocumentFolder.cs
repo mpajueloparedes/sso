@@ -1,4 +1,5 @@
 ﻿using MaproSSO.Domain.Common;
+using MaproSSO.Domain.Exceptions;
 using System.Reflection.Metadata;
 
 namespace MaproSSO.Domain.Entities.SSO

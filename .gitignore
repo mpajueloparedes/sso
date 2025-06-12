@@ -1,0 +1,44 @@
+# Archivos generados por Visual Studio
+*.suo
+*.user
+*.vs
+*.vspscc
+*.vssscc
+*.ipch
+*.sdf
+*.opensdf
+*.VC.db
+
+# Archivos generados por MSBuild
+*.bin
+*.obj
+*.ilk
+*.pdb
+*.log
+
+# Archivos de depuración
+*.pdb
+*.mdb
+*.ncb
+*.VC.db
+
+# Archivos de configuración
+#*.config
+*.vssettings
+*.vstemplate
+
+# Archivos de caché
+*.cache
+
+# Archivos temporales
+*.tmp
+*.log
+*.user
+*.lock
+*.deployment.config
+
+# Archivos de origen de terceros
+node_modules/
+bower_components/
+bin/
+obj/

@@ -14,6 +14,7 @@ using MaproSSO.Domain.ValueObjects;
 using MaproSSO.Domain.Enums;
 using MaproSSO.Application.Features.Tenants.Dtos;
 using MaproSSO.Domain.Entities.SSO;
+using MaproSSO.Domain.Entities.Areas;
 
 namespace MaproSSO.Application.Features.Tenants.Commands.CreateTenant
 {
