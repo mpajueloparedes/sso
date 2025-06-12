@@ -1,5 +1,6 @@
 ﻿using MaproSSO.Domain.Common;
 using MaproSSO.Domain.Entities.SSO;
+using MaproSSO.Domain.Enums;
 
 namespace MaproSSO.Domain.Entities.Inspections;
 
@@ -15,7 +16,7 @@ public class Inspection : BaseAuditableEntity
     public Guid InspectorUserId { get; set; }
     public DateTime ScheduledDate { get; set; }
     public DateTime? ExecutedDate { get; set; }
-    public string Status { get; set; } = "Pending"; // Pending, InProgress, Completed
+    public InspectionStatus Status { get; set; } = InspectionStatus.Pending; // Pending, InProgress, Completed
     public int CompletionPercentage { get; set; } = 0;
     public string? DocumentUrl { get; set; }
 

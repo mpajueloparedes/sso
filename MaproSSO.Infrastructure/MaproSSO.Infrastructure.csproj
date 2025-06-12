@@ -10,4 +10,8 @@
     <Folder Include="Persistence\Migrations\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MaproSSO.Domain\MaproSSO.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

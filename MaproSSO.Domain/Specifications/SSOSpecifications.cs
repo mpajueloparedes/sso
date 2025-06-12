@@ -1,4 +1,5 @@
 ﻿using MaproSSO.Domain.Entities.Announcements;
+using MaproSSO.Domain.Entities.Inspections;
 using MaproSSO.Domain.Entities.SSO;
 using MaproSSO.Domain.Enums;
 
@@ -22,7 +23,7 @@ namespace MaproSSO.Domain.Specifications
             : base(i => i.TenantId == tenantId && i.Status == InspectionStatus.Pending)
         {
             AddInclude(i => i.Area);
-            AddInclude(i => i.InspectorUser);
+            AddInclude(i => i.InspectorUserId);
             ApplyOrderBy(i => i.ScheduledDate);
         }
     }
