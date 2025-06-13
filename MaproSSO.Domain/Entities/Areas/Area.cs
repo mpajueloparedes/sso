@@ -4,7 +4,7 @@ using MaproSSO.Domain.Exceptions;
 
 namespace MaproSSO.Domain.Entities.Areas
 {
-    public class Area : BaseAuditableEntity, IAggregateRoot
+    public class Area : BaseAggregateRoot, IAggregateRoot
     {
         private readonly List<AreaUser> _areaUsers = new();
 

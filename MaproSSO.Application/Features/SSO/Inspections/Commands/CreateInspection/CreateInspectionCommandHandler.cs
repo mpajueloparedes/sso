@@ -10,6 +10,7 @@ using MaproSSO.Application.Common.Models;
 using MaproSSO.Application.Common.Exceptions;
 using MaproSSO.Domain.Entities.SSO;
 using MaproSSO.Application.Common.Services;
+using MaproSSO.Application.Features.Inspections.DTOs;
 
 namespace MaproSSO.Application.Features.SSO.Inspections.Commands.CreateInspection
 {

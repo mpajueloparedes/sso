@@ -3,7 +3,7 @@ using MaproSSO.Domain.Entities.SSO;
 
 namespace MaproSSO.Domain.Entities.Audits;
 
-public class Audit : BaseAuditableEntity
+public class Audit : BaseAggregateRoot
 {
     public Guid AuditId { get; set; }
     public Guid TenantId { get; set; }

@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
-using MaproSSO.Application.Features.Audits.DTOs;
-using MaproSSO.Domain.Entities.Audits;
+using MaproSSO.Application.Features.Audit.DTOs;
+using MaproSSO.Domain.Entities.Audit;
+using System.Text.Json;
 
 namespace MaproSSO.Application.Common.Mappings;
 
@@ -8,23 +9,42 @@ public class AuditMappingProfile : Profile
 {
     public AuditMappingProfile()
     {
-        CreateMap<Audit, AuditDto>()
-            .ForMember(dest => dest.ProgramName, opt => opt.MapFrom(src => src.Program.ProgramName))
-            .ForMember(dest => dest.AreaName, opt => opt.MapFrom(src => src.Area.AreaName))
-            .ForMember(dest => dest.AuditorName, opt => opt.MapFrom(src => $"{src.Auditor.FirstName} {src.Auditor.LastName}"));
+        CreateMap<AuditLog, AuditLogDto>()
+            .ForMember(dest => dest.TenantName, opt => opt.MapFrom(src => src.Tenant != null ? src.Tenant.CompanyName : null))
+            .ForMember(dest => dest.ChangedProperties, opt => opt.MapFrom(src => ParseChangedProperties(src.OldValues, src.NewValues)));
 
-        CreateMap<AuditProgram, AuditProgramDto>();
+        CreateMap<AccessLog, AccessLogDto>()
+            .ForMember(dest => dest.TenantName, opt => opt.MapFrom(src => src.Tenant != null ? src.Tenant.CompanyName : null));
+    }
 
-        CreateMap<AuditCategory, AuditCategoryDto>();
+    private static Dictionary<string, object>? ParseChangedProperties(string? oldValues, string? newValues)
+    {
+        if (string.IsNullOrEmpty(oldValues) || string.IsNullOrEmpty(newValues))
+            return null;
 
-        CreateMap<AuditCriteria, AuditCriteriaDto>();
+        try
+        {
+            var oldDict = JsonSerializer.Deserialize<Dictionary<string, object>>(oldValues);
+            var newDict = JsonSerializer.Deserialize<Dictionary<string, object>>(newValues);
 
-        CreateMap<AuditEvaluation, AuditEvaluationDto>()
-            .ForMember(dest => dest.CriteriaDescription, opt => opt.MapFrom(src => src.Criteria.Description))
-            .ForMember(dest => dest.MaxScore, opt => opt.MapFrom(src => src.Criteria.MaxScore))
-            .ForMember(dest => dest.EvaluatedByName, opt => opt.MapFrom(src => $"{src.EvaluatedByUser.FirstName} {src.EvaluatedByUser.LastName}"));
+            if (oldDict == null || newDict == null)
+                return null;
 
-        CreateMap<AuditEvidence, AuditEvidenceDto>()
-            .ForMember(dest => dest.UploadedByName, opt => opt.MapFrom(src => $"{src.UploadedByUser.FirstName} {src.UploadedByUser.LastName}"));
+            var changes = new Dictionary<string, object>();
+
+            foreach (var key in newDict.Keys)
+            {
+                if (!oldDict.ContainsKey(key) || !Equals(oldDict[key], newDict[key]))
+                {
+                    changes[key] = new { Old = oldDict.GetValueOrDefault(key), New = newDict[key] };
+                }
+            }
+
+            return changes.Any() ? changes : null;
+        }
+        catch
+        {
+            return null;
+        }
     }
 }

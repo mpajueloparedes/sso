@@ -2,7 +2,7 @@
 
 namespace MaproSSO.Domain.Entities.Trainings;
 
-public class Training : BaseAuditableEntity
+public class Training : BaseAggregateRoot
 {
     public Guid TrainingId { get; set; }
     public Guid TenantId { get; set; }

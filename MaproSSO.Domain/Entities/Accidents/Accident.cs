@@ -2,7 +2,7 @@
 
 namespace MaproSSO.Domain.Entities.Accidents;
 
-public class Accident : BaseAuditableEntity
+public class Accident : BaseAggregateRoot
 {
     public Guid AccidentId { get; set; }
     public Guid TenantId { get; set; }

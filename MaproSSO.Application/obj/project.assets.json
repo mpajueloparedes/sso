@@ -300,6 +300,9 @@
       "MaproSSO.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "MediatR": "12.2.0"
+        },
         "compile": {
           "bin/placeholder/MaproSSO.Domain.dll": {}
         },

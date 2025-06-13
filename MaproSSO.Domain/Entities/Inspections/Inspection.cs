@@ -4,7 +4,7 @@ using MaproSSO.Domain.Enums;
 
 namespace MaproSSO.Domain.Entities.Inspections;
 
-public class Inspection : BaseAuditableEntity
+public class Inspection : BaseAggregateRoot
 {
     public Guid InspectionId { get; set; }
     public Guid TenantId { get; set; }

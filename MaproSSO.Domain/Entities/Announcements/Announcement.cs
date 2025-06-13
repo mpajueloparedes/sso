@@ -7,7 +7,7 @@ using MaproSSO.Domain.Exceptions;
 
 namespace MaproSSO.Domain.Entities.Announcements
 {
-    public class Announcement : BaseAuditableEntity, IAggregateRoot
+    public class Announcement : BaseAggregateRoot, IAggregateRoot
     {
         private readonly List<AnnouncementImage> _images = new();
         private readonly List<CorrectiveAction> _correctiveActions = new();

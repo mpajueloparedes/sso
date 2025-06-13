@@ -7,6 +7,9 @@ namespace MaproSSO.Domain.Common
     {
         private readonly List<IDomainEvent> _domainEvents = new();
 
+        public DateTime CreatedAt { get; set; }
+        public string CreatedBy { get; set; } = string.Empty;
+
         public Guid Id { get; protected set; }
 
         public IReadOnlyCollection<IDomainEvent> DomainEvents => _domainEvents.AsReadOnly();

@@ -2,11 +2,10 @@
 using MaproSSO.Domain.Enums;
 using MaproSSO.Domain.Exceptions;
 using MaproSSO.Domain.ValueObjects;
-using static MaproSSO.Domain.Entities.SSO.AuditCriteria;
 
 namespace MaproSSO.Domain.Entities.Security
 {
-    public class User : BaseAuditableEntity, IAggregateRoot
+    public class User : BaseAggregateRoot, IAggregateRoot
     {
         private readonly List<UserRole> _userRoles = new();
         private readonly List<RefreshToken> _refreshTokens = new();

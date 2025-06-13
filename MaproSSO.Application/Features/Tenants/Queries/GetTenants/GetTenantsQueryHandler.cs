@@ -8,6 +8,7 @@ using AutoMapper.QueryableExtensions;
 using MaproSSO.Application.Common.Interfaces;
 using MaproSSO.Application.Common.Models;
 using MaproSSO.Application.Common.Mappings;
+using MaproSSO.Application.Features.Tenants.DTOs;
 
 namespace MaproSSO.Application.Features.Tenants.Queries.GetTenants
 {

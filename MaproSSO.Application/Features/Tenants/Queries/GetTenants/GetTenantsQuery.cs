@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using MaproSSO.Application.Common.Models;
 using MaproSSO.Application.Common.Attributes;
+using MaproSSO.Application.Features.Tenants.DTOs;
 
 namespace MaproSSO.Application.Features.Tenants.Queries.GetTenants
 {

@@ -6,7 +6,7 @@ using System.Net;
 
 namespace MaproSSO.Domain.Entities.Tenant
 {
-    public class Tenant : BaseAuditableEntity, IAggregateRoot
+    public class Tenant : BaseAggregateRoot, IAggregateRoot
     {
         private readonly List<TenantSettings> _settings = new();
 
