@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MaproSSO.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e250be28bbe1bde60d7399027e7500c01a719e38")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e87978d0402d897abea66a7f7bd8a7aa2c07ab2")]
 [assembly: System.Reflection.AssemblyProductAttribute("MaproSSO.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MaproSSO.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
